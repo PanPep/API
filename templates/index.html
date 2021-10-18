@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <link rel="stylesheet" href="{{url_for( 'static', filename='style.css')}}">
+    <meta charset="UTF-8">
+    <title>KALKULATOR</title>
+    {% endblock %}
+</head>
+<body>
+    <div class="back">
+        <h1 class="title">Tu kalkulator, witam Cię</h1>
+        <a href = "/calculator">Wejdź a przeliczę Twoje waluty</a>
+        {% block content%}
+        {% endblock %}
+    </div>
+</body>
+</html>
